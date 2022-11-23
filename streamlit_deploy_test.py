@@ -10,7 +10,7 @@ import pickle
 def app():
     with open('svc_oversample.pickle', 'rb') as f:
         pipe = pickle.load(f)
-    st.header("Rating Prediction using Linear SVC")
+    st.header("Rating Prediction using updated Linear SVC")
     review=st.text_input("Enter your review for the prediction")
     st.write("Your review is:",review)
     
