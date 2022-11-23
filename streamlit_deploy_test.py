@@ -8,7 +8,7 @@ from sklearn.metrics import accuracy_score,precision_score,recall_score,classifi
 import pickle
 
 def app():
-    with open('svcpipe.pickle', 'rb') as f:
+    with open('svc_oversample.pickle', 'rb') as f:
         pipe = pickle.load(f)
     st.header("Rating Prediction using Linear SVC")
     review=st.text_input("Enter your review for the prediction")
